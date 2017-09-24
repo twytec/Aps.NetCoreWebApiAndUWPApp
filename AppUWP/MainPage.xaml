@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="AppUWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+
+        <Button Content="Upload file as Base64String in JSON" x:Name="btnUpload1" Click="BtnUploadFileAsJson_Click" />
+        <Button Content="Upload file as Byte array" x:Name="btnUploadAsByteArray" Grid.Row="1" Click="BtnUploadAsByteArray_Click"  />
+        <Button Content="Get Model from Api" x:Name="btnGetModelFromApi" Grid.Row="2" Click="BtnGetModelFromApi_Click" />
+        <Button Content="Download file from Api" x:Name="btnDownloadFileFromApi" Grid.Row="3" Click="BtnDownloadFileFromApi_Click" />
+    </Grid>
+</Page>

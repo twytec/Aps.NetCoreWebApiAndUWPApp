@@ -16,4 +16,6 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
 
+  <Import Project="..\SharedModels\SharedModels.projitems" Label="Shared" />
+
 </Project>
